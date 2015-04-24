@@ -61,17 +61,17 @@ module ac97commands (clock, ready, command_address, command_data,
         4'h1: // Read ID
           command <= 24'h80_0000;
         4'h3: // headphone volume
-          command <= { 8'h<Fill-in>, 3'b000, vol, 3'b000, vol };
+          command <= { 8'h04, 3'b000, vol, 3'b000, vol }; //GS 1:00AM
         4'h5: // PCM volume
-          command <= 24'h<Fill-in>_0808;
+          command <= 24'h18_0808; //GS
         4'h6: // Record source select
-          command <= { 8'h<Fill-in>, 5'b00000, source, 5'b00000, source};
+          command <= { 8'h1A, 5'b00000, source, 5'b00000, source}; //GS 1:00AM
         4'h7: // Record gain = max
-	  command <= 24'h<Fill-in>_0F0F;
+	  command <= 24'h1C_0F0F; //GS 1:00AM
         4'h9: // set +20db mic gain
-          command <= 24'h<Fill-in>_8048;
+          command <= 24'h0E_8048; //GS 1:00AM
         4'hA: // Set beep volume
-          command <= 24'h<Fill-in>_0000;
+          command <= 24'h0A_0000;
         4'hB: // PCM out bypass mix1
           command <= 24'h20_8000;
         default:

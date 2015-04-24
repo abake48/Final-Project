@@ -18,6 +18,7 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
+//Cache Money Registers
 module ac97 (ready,
              command_address, command_data, command_valid,
              left_data, left_valid,
@@ -76,18 +77,22 @@ module ac97 (ready,
 
    always @(posedge ac97_bit_clock) begin
       // Generate the sync signal 
-		// <add your code here>
-      
-		
+		if(bit_count == 255) begin
+			ac97_synch <= 1'b1;
+		end
+		if(bit_count == 15) begin
+			ac97_synch <= 1'b1;
+		end
+	
       // Generate the ready signal
-      if (bit_count == <Fill-in>)
+      if (bit_count == 255) // this 255 bit count is end of frame changed to 1 GS 
         ready <= 1'b1;
-      if (bit_count == 2)
+      if (bit_count == 2) //should go low after first bit position 
         ready <= 1'b0;
 
       // Latch user data at the end of each frame. This ensures that the
       // first frame after reset will be empty.
-      if (bit_count == <Fill-in>)
+      if (bit_count == 255) //each frame has 256 bits GS
         begin
            l_cmd_addr <= {command_address, 12'h000};
            l_cmd_data <= {command_data, 4'h0};
@@ -98,34 +103,34 @@ module ac97 (ready,
            l_right_v <= right_valid;
         end
 
-      if ((bit_count >= <Fill-in>) && (bit_count <= <Fill-in>))
+      if ((bit_count >= 0) && (bit_count <= 15))
         // Slot 0: Tags
         case (bit_count[3:0])
-          4'h<Fill-in>: ac97_sdata_out <= 1'b1;      // Frame valid
-          4'h<Fill-in>: ac97_sdata_out <= l_cmd_v;   // Command address valid
-          4'h<Fill-in>: ac97_sdata_out <= l_cmd_v;   // Command data valid
-          4'h<Fill-in>: ac97_sdata_out <= l_left_v;  // Left data valid
-	  4'h<Fill-in>: ac97_sdata_out <= l_right_v; // Right data valid
+          4'h0: ac97_sdata_out <= 1'b1;      // Frame valid GS 4'h0
+          4'h1: ac97_sdata_out <= l_cmd_v;   // Command address valid 4'h1
+          4'h2: ac97_sdata_out <= l_cmd_v;   // Command data valid 4'h2
+          4'h3: ac97_sdata_out <= l_left_v;  // Left data valid 4'h3
+		  4'h4: ac97_sdata_out <= l_right_v; // Right data valid 4'h4
           default: ac97_sdata_out <= 1'b0;
         endcase
 
-      else if ((bit_count >= <Fill-in>) && (bit_count <= 35))
+      else if ((bit_count >= 16) && (bit_count <= 35)) //slot 1 is 20 bits, bits 16 - 35 GS
         // Slot 1: Command address (8-bits, left justified)
-        ac97_sdata_out <= l_cmd_v ? <Fill-in>[35-bit_count] : 1'b0;
+        ac97_sdata_out <= l_cmd_v ? l_cmd_addr[35-bit_count] : 1'b0; //GS 35 minus bit_count
 
-      else if ((bit_count >= 36) && (bit_count <= <Fill-in>))
+      else if ((bit_count >= 36) && (bit_count <= 55)) //20 bits for slot 2, bits 36 - 55 GS
         // Slot 2: Command data (16-bits, left justified)
-        ac97_sdata_out <= l_cmd_v ? <Fill-in>[<Fill-in>-bit_count] : 1'b0;
+        ac97_sdata_out <= l_cmd_v ? l_cmd_data[55-bit_count] : 1'b0; //GS 55 minus bit_count
 
-      else if ((bit_count >= <Fill-in>) && (bit_count <= 75))
+      else if ((bit_count >= 56) && (bit_count <= 75)) //56 through 75 is 20 bits GS
         begin
            // Slot 3: Left channel
            ac97_sdata_out <= l_left_v ? l_left_data[19] : 1'b0;
            l_left_data <= { l_left_data[18:0], l_left_data[19] };
         end
-      else if ((bit_count >= 76) && (bit_count <= <Fill-in>))
+      else if ((bit_count >= 76) && (bit_count <= 95))
         // Slot 4: Right channel
-           ac97_sdata_out <= l_right_v ? l_right_data[<Fill-in>-bit_count] : 1'b0;
+           ac97_sdata_out <= l_right_v ? l_right_data[95-bit_count] : 1'b0; //95 marks the end of this slot, 95 minus bit_count 
       else
         ac97_sdata_out <= 1'b0;
 
@@ -134,12 +139,12 @@ module ac97 (ready,
    end // always @ (posedge ac97_bit_clock)
 
    always @(negedge ac97_bit_clock) begin
-      if ((bit_count >= <Fill-in>) && (bit_count <= 76))
+      if ((bit_count >= 57) && (bit_count <= 76)) //57 
         // Slot 3: Left channel
-        // <add your code here>
-      else if ((bit_count >= 77) && (bit_count <= <Fill-in>))
+        left_in_data <= {left_in_data[18:0], ac97_sdata_in};
+      else if ((bit_count >= 77) && (bit_count <= 96))
         // Slot 4: Right channel
-        // <add your code here>
+        right_in_data <= {right_in_data[18:0], ac97_sdata_in}; //GS
    end
 
 endmodule

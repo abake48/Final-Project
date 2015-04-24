@@ -38,7 +38,7 @@ module ac97audio (clock_100mhz, reset, volume,
    input ac97_bit_clock;
 
    wire [2:0] source;
-   assign source = <Fill-in>;	   //mic
+   assign source = 3'b000;	   //mic GS, will need to assign this to 
 
    wire [7:0] command_address;
    wire [15:0] command_data;
@@ -63,7 +63,26 @@ module ac97audio (clock_100mhz, reset, volume,
    wire ac97_ready;
    
    // instantiate ac97 component
-	// <add your code here>
+	ac97 ourac97 (
+				.ready(ac97_ready),
+				.command_address(command_address),
+				.command_data(command_data),
+				.command_valid(command_valid),
+				.left_data(left_out_data),
+				.left_valid(1'b1), //will always be valid GS
+				.right_data(right_out_data),
+				.right_valid(1'b1), //will always be valid GS
+				.left_in_data(left_in_data),
+				.right_in_data(right_in_data),
+				.ac97_sdata_out(ac97_sdata_out),
+				.ac97_sdata_in(ac97_sdata_in),
+				.ac97_synch(ac97_synch),
+				.ac97_bit_clock(ac97_bit_clock)
+	);
+	
+	//loopback for testing, GS
+	//assign left_out_data = {audio_in_data, 12'b000000000000};		
+	
 	
    // ready: one cycle pulse synchronous with clock_100mhz
    reg [2:0] ready_sync;
@@ -81,6 +100,15 @@ module ac97audio (clock_100mhz, reset, volume,
 
    // generate repeating sequence of read/writes to AC97 registers
    // instantiate ac97commands component
-	// <add your code here>   
+	ac97commands ourac97commands( //GS instantiation
+						.clock(clock_100mhz),
+						.ready(ready),
+						.command_address(command_address),
+						.command_data(command_data),
+						.command_valid(command_valid),
+						.volume(volume), //change to 4'b1111 if need full volume GS
+						.source(3'b000) //mic GS, I think
+		
+	);
 	
 endmodule
