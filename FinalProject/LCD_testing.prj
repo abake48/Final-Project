@@ -1,0 +1,4 @@
+verilog work "LCD_program.v"
+verilog work "kcpsm6.v"
+verilog work "picoblaze.v"
+verilog work "LCD_testing.v"

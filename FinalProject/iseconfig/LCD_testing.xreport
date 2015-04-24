@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2015-04-24T11:28:21</DateModified>
+  <DateModified>2015-04-24T11:55:10</DateModified>
   <ModuleName>LCD_testing</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>C:/Users/The Masterpiece!!!/Documents/GitHub/Final-Project/LCD/FinalProject/iseconfig/LCD_testing.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/The Masterpiece!!!/Documents/GitHub/Final-Project/LCD/FinalProject\</ImplementationReportsDirectory>
+  <SummaryTimeStamp>2015-04-24T01:19:17</SummaryTimeStamp>
+  <SavedFilePath>C:/Users/The Masterpiece!!!/Documents/GitHub/Final-Project/FinalProject/iseconfig/LCD_testing.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/The Masterpiece!!!/Documents/GitHub/Final-Project/FinalProject\</ImplementationReportsDirectory>
   <DateInitialized>2015-04-19T16:51:48</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

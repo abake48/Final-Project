@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "E:/CSD Labs/Final Lab/FinalProject/tb_lcd_driver_isim_beh.exe" -prj "E:/CSD Labs/Final Lab/FinalProject/tb_lcd_driver_beh.prj" "work.tb_lcd_driver" "work.glbl" 

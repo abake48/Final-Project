@@ -1,0 +1,8 @@
+Release 13.4 Drc O.87xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Fri Apr 24 14:41:18 2015
+
+drc -z LCD_testing.ncd LCD_testing.pcf
+
+DRC detected 0 errors and 0 warnings.

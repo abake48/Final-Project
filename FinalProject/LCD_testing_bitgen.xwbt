@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\The Masterpiece!!!\Documents\GitHub\Final-Project\FinalProject\LCD_testing.ncd
+OUTFILE=C:\Users\The Masterpiece!!!\Documents\GitHub\Final-Project\FinalProject\LCD_testing.bit
+FAMILY=Spartan6
+PART=xc6slx45-3csg324
+WORKINGDIR=C:\Users\The Masterpiece!!!\Documents\GitHub\Final-Project\FinalProject
+LICENSE=WebPack
+USER_INFO=210990902_0_0_755

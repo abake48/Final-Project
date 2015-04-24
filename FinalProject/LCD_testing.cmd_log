@@ -1,0 +1,258 @@
+xst -intstyle ise -ifn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.xst" -ofn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA_PinMaps.ucf -p xc6slx45-csg324-3 "LCD_testing.ngc" LCD_testing.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD_testing_map.ncd LCD_testing.ngd LCD_testing.pcf 
+xst -intstyle ise -ifn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.xst" -ofn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA_PinMaps.ucf -p xc6slx45-csg324-3 "LCD_testing.ngc" LCD_testing.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD_testing_map.ncd LCD_testing.ngd LCD_testing.pcf 
+xst -intstyle ise -ifn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.xst" -ofn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA_PinMaps.ucf -p xc6slx45-csg324-3 "LCD_testing.ngc" LCD_testing.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD_testing_map.ncd LCD_testing.ngd LCD_testing.pcf 
+xst -intstyle ise -ifn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.xst" -ofn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA_PinMaps.ucf -p xc6slx45-csg324-3 "LCD_testing.ngc" LCD_testing.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD_testing_map.ncd LCD_testing.ngd LCD_testing.pcf 
+xst -intstyle ise -ifn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.xst" -ofn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA_PinMaps.ucf -p xc6slx45-csg324-3 "LCD_testing.ngc" LCD_testing.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD_testing_map.ncd LCD_testing.ngd LCD_testing.pcf 
+par -w -intstyle ise -ol high -mt off LCD_testing_map.ncd LCD_testing.ncd LCD_testing.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LCD_testing.twx LCD_testing.ncd -o LCD_testing.twr LCD_testing.pcf -ucf FPGA_PinMaps.ucf 
+bitgen -intstyle ise -f LCD_testing.ut LCD_testing.ncd 
+xst -intstyle ise -ifn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.xst" -ofn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA_PinMaps.ucf -p xc6slx45-csg324-3 "LCD_testing.ngc" LCD_testing.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD_testing_map.ncd LCD_testing.ngd LCD_testing.pcf 
+par -w -intstyle ise -ol high -mt off LCD_testing_map.ncd LCD_testing.ncd LCD_testing.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LCD_testing.twx LCD_testing.ncd -o LCD_testing.twr LCD_testing.pcf -ucf FPGA_PinMaps.ucf 
+bitgen -intstyle ise -f LCD_testing.ut LCD_testing.ncd 
+xst -intstyle ise -ifn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.xst" -ofn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.syr" 
+xst -intstyle ise -ifn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.xst" -ofn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.syr" 
+xst -intstyle ise -ifn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.xst" -ofn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA_PinMaps.ucf -p xc6slx45-csg324-3 "LCD_testing.ngc" LCD_testing.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD_testing_map.ncd LCD_testing.ngd LCD_testing.pcf 
+par -w -intstyle ise -ol high -mt off LCD_testing_map.ncd LCD_testing.ncd LCD_testing.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LCD_testing.twx LCD_testing.ncd -o LCD_testing.twr LCD_testing.pcf -ucf FPGA_PinMaps.ucf 
+bitgen -intstyle ise -f LCD_testing.ut LCD_testing.ncd 
+xst -intstyle ise -ifn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.xst" -ofn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.syr" 
+xst -intstyle ise -ifn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.xst" -ofn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.syr" 
+xst -intstyle ise -ifn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.xst" -ofn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA_PinMaps.ucf -p xc6slx45-csg324-3 "LCD_testing.ngc" LCD_testing.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA_PinMaps.ucf -p xc6slx45-csg324-3 "LCD_testing.ngc" LCD_testing.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD_testing_map.ncd LCD_testing.ngd LCD_testing.pcf 
+par -w -intstyle ise -ol high -mt off LCD_testing_map.ncd LCD_testing.ncd LCD_testing.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LCD_testing.twx LCD_testing.ncd -o LCD_testing.twr LCD_testing.pcf -ucf FPGA_PinMaps.ucf 
+bitgen -intstyle ise -f LCD_testing.ut LCD_testing.ncd 
+xst -intstyle ise -ifn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.xst" -ofn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA_PinMaps.ucf -p xc6slx45-csg324-3 "LCD_testing.ngc" LCD_testing.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD_testing_map.ncd LCD_testing.ngd LCD_testing.pcf 
+par -w -intstyle ise -ol high -mt off LCD_testing_map.ncd LCD_testing.ncd LCD_testing.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LCD_testing.twx LCD_testing.ncd -o LCD_testing.twr LCD_testing.pcf -ucf FPGA_PinMaps.ucf 
+bitgen -intstyle ise -f LCD_testing.ut LCD_testing.ncd 
+xst -intstyle ise -ifn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.xst" -ofn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA_PinMaps.ucf -p xc6slx45-csg324-3 "LCD_testing.ngc" LCD_testing.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD_testing_map.ncd LCD_testing.ngd LCD_testing.pcf 
+par -w -intstyle ise -ol high -mt off LCD_testing_map.ncd LCD_testing.ncd LCD_testing.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LCD_testing.twx LCD_testing.ncd -o LCD_testing.twr LCD_testing.pcf -ucf FPGA_PinMaps.ucf 
+bitgen -intstyle ise -f LCD_testing.ut LCD_testing.ncd 
+xst -intstyle ise -ifn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.xst" -ofn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA_PinMaps.ucf -p xc6slx45-csg324-3 "LCD_testing.ngc" LCD_testing.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD_testing_map.ncd LCD_testing.ngd LCD_testing.pcf 
+par -w -intstyle ise -ol high -mt off LCD_testing_map.ncd LCD_testing.ncd LCD_testing.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LCD_testing.twx LCD_testing.ncd -o LCD_testing.twr LCD_testing.pcf -ucf FPGA_PinMaps.ucf 
+bitgen -intstyle ise -f LCD_testing.ut LCD_testing.ncd 
+xst -intstyle ise -ifn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.xst" -ofn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA_PinMaps.ucf -p xc6slx45-csg324-3 "LCD_testing.ngc" LCD_testing.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD_testing_map.ncd LCD_testing.ngd LCD_testing.pcf 
+par -w -intstyle ise -ol high -mt off LCD_testing_map.ncd LCD_testing.ncd LCD_testing.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LCD_testing.twx LCD_testing.ncd -o LCD_testing.twr LCD_testing.pcf -ucf FPGA_PinMaps.ucf 
+bitgen -intstyle ise -f LCD_testing.ut LCD_testing.ncd 
+xst -intstyle ise -ifn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.xst" -ofn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA_PinMaps.ucf -p xc6slx45-csg324-3 "LCD_testing.ngc" LCD_testing.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD_testing_map.ncd LCD_testing.ngd LCD_testing.pcf 
+par -w -intstyle ise -ol high -mt off LCD_testing_map.ncd LCD_testing.ncd LCD_testing.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LCD_testing.twx LCD_testing.ncd -o LCD_testing.twr LCD_testing.pcf -ucf FPGA_PinMaps.ucf 
+bitgen -intstyle ise -f LCD_testing.ut LCD_testing.ncd 
+xst -intstyle ise -ifn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.xst" -ofn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA_PinMaps.ucf -p xc6slx45-csg324-3 "LCD_testing.ngc" LCD_testing.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD_testing_map.ncd LCD_testing.ngd LCD_testing.pcf 
+par -w -intstyle ise -ol high -mt off LCD_testing_map.ncd LCD_testing.ncd LCD_testing.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LCD_testing.twx LCD_testing.ncd -o LCD_testing.twr LCD_testing.pcf -ucf FPGA_PinMaps.ucf 
+bitgen -intstyle ise -f LCD_testing.ut LCD_testing.ncd 
+xst -intstyle ise -ifn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.xst" -ofn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.syr" 
+xst -intstyle ise -ifn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.xst" -ofn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.syr" 
+xst -intstyle ise -ifn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.xst" -ofn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA_PinMaps.ucf -p xc6slx45-csg324-3 "LCD_testing.ngc" LCD_testing.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA_PinMaps.ucf -p xc6slx45-csg324-3 "LCD_testing.ngc" LCD_testing.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD_testing_map.ncd LCD_testing.ngd LCD_testing.pcf 
+par -w -intstyle ise -ol high -mt off LCD_testing_map.ncd LCD_testing.ncd LCD_testing.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LCD_testing.twx LCD_testing.ncd -o LCD_testing.twr LCD_testing.pcf -ucf FPGA_PinMaps.ucf 
+bitgen -intstyle ise -f LCD_testing.ut LCD_testing.ncd 
+xst -intstyle ise -ifn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.xst" -ofn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA_PinMaps.ucf -p xc6slx45-csg324-3 "LCD_testing.ngc" LCD_testing.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD_testing_map.ncd LCD_testing.ngd LCD_testing.pcf 
+par -w -intstyle ise -ol high -mt off LCD_testing_map.ncd LCD_testing.ncd LCD_testing.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LCD_testing.twx LCD_testing.ncd -o LCD_testing.twr LCD_testing.pcf -ucf FPGA_PinMaps.ucf 
+bitgen -intstyle ise -f LCD_testing.ut LCD_testing.ncd 
+xst -intstyle ise -ifn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.xst" -ofn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA_PinMaps.ucf -p xc6slx45-csg324-3 "LCD_testing.ngc" LCD_testing.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD_testing_map.ncd LCD_testing.ngd LCD_testing.pcf 
+par -w -intstyle ise -ol high -mt off LCD_testing_map.ncd LCD_testing.ncd LCD_testing.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LCD_testing.twx LCD_testing.ncd -o LCD_testing.twr LCD_testing.pcf -ucf FPGA_PinMaps.ucf 
+bitgen -intstyle ise -f LCD_testing.ut LCD_testing.ncd 
+xst -intstyle ise -ifn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.xst" -ofn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.syr" 
+xst -intstyle ise -ifn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.xst" -ofn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.syr" 
+xst -intstyle ise -ifn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.xst" -ofn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA_PinMaps.ucf -p xc6slx45-csg324-3 "LCD_testing.ngc" LCD_testing.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD_testing_map.ncd LCD_testing.ngd LCD_testing.pcf 
+par -w -intstyle ise -ol high -mt off LCD_testing_map.ncd LCD_testing.ncd LCD_testing.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LCD_testing.twx LCD_testing.ncd -o LCD_testing.twr LCD_testing.pcf -ucf FPGA_PinMaps.ucf 
+bitgen -intstyle ise -f LCD_testing.ut LCD_testing.ncd 
+xst -intstyle ise -ifn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.xst" -ofn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA_PinMaps.ucf -p xc6slx45-csg324-3 "LCD_testing.ngc" LCD_testing.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD_testing_map.ncd LCD_testing.ngd LCD_testing.pcf 
+par -w -intstyle ise -ol high -mt off LCD_testing_map.ncd LCD_testing.ncd LCD_testing.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LCD_testing.twx LCD_testing.ncd -o LCD_testing.twr LCD_testing.pcf -ucf FPGA_PinMaps.ucf 
+bitgen -intstyle ise -f LCD_testing.ut LCD_testing.ncd 
+xst -intstyle ise -ifn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.xst" -ofn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA_PinMaps.ucf -p xc6slx45-csg324-3 "LCD_testing.ngc" LCD_testing.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD_testing_map.ncd LCD_testing.ngd LCD_testing.pcf 
+par -w -intstyle ise -ol high -mt off LCD_testing_map.ncd LCD_testing.ncd LCD_testing.pcf 
+xst -intstyle ise -ifn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.xst" -ofn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA_PinMaps.ucf -p xc6slx45-csg324-3 "LCD_testing.ngc" LCD_testing.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD_testing_map.ncd LCD_testing.ngd LCD_testing.pcf 
+par -w -intstyle ise -ol high -mt off LCD_testing_map.ncd LCD_testing.ncd LCD_testing.pcf 
+bitgen -intstyle ise -f LCD_testing.ut LCD_testing.ncd 
+xst -intstyle ise -ifn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.xst" -ofn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA_PinMaps.ucf -p xc6slx45-csg324-3 "LCD_testing.ngc" LCD_testing.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD_testing_map.ncd LCD_testing.ngd LCD_testing.pcf 
+par -w -intstyle ise -ol high -mt off LCD_testing_map.ncd LCD_testing.ncd LCD_testing.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LCD_testing.twx LCD_testing.ncd -o LCD_testing.twr LCD_testing.pcf -ucf FPGA_PinMaps.ucf 
+bitgen -intstyle ise -f LCD_testing.ut LCD_testing.ncd 
+xst -intstyle ise -ifn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.xst" -ofn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA_PinMaps.ucf -p xc6slx45-csg324-3 "LCD_testing.ngc" LCD_testing.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD_testing_map.ncd LCD_testing.ngd LCD_testing.pcf 
+par -w -intstyle ise -ol high -mt off LCD_testing_map.ncd LCD_testing.ncd LCD_testing.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LCD_testing.twx LCD_testing.ncd -o LCD_testing.twr LCD_testing.pcf -ucf FPGA_PinMaps.ucf 
+bitgen -intstyle ise -f LCD_testing.ut LCD_testing.ncd 
+xst -intstyle ise -ifn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.xst" -ofn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA_PinMaps.ucf -p xc6slx45-csg324-3 "LCD_testing.ngc" LCD_testing.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD_testing_map.ncd LCD_testing.ngd LCD_testing.pcf 
+par -w -intstyle ise -ol high -mt off LCD_testing_map.ncd LCD_testing.ncd LCD_testing.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LCD_testing.twx LCD_testing.ncd -o LCD_testing.twr LCD_testing.pcf -ucf FPGA_PinMaps.ucf 
+bitgen -intstyle ise -f LCD_testing.ut LCD_testing.ncd 
+xst -intstyle ise -ifn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.xst" -ofn "E:/CSD Labs/Final Lab/FinalProject/LCD_testing.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA_PinMaps.ucf -p xc6slx45-csg324-3 "LCD_testing.ngc" LCD_testing.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD_testing_map.ncd LCD_testing.ngd LCD_testing.pcf 
+par -w -intstyle ise -ol high -mt off LCD_testing_map.ncd LCD_testing.ncd LCD_testing.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LCD_testing.twx LCD_testing.ncd -o LCD_testing.twr LCD_testing.pcf -ucf FPGA_PinMaps.ucf 
+bitgen -intstyle ise -f LCD_testing.ut LCD_testing.ncd 
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD_testing_map.ncd LCD_testing.ngd LCD_testing.pcf 
+par -w -intstyle ise -ol high -mt off LCD_testing_map.ncd LCD_testing.ncd LCD_testing.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LCD_testing.twx LCD_testing.ncd -o LCD_testing.twr LCD_testing.pcf -ucf FPGA_PinMaps.ucf 
+bitgen -intstyle ise -f LCD_testing.ut LCD_testing.ncd 
+xst -intstyle ise -ifn "C:/Users/The Masterpiece!!!/Documents/GitHub/Final-Project/FinalProject/LCD_testing.xst" -ofn "C:/Users/The Masterpiece!!!/Documents/GitHub/Final-Project/FinalProject/LCD_testing.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA_PinMaps.ucf -p xc6slx45-csg324-3 "LCD_testing.ngc" LCD_testing.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA_PinMaps.ucf -p xc6slx45-csg324-3 "LCD_testing.ngc" LCD_testing.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD_testing_map.ncd LCD_testing.ngd LCD_testing.pcf 
+par -w -intstyle ise -ol high -mt off LCD_testing_map.ncd LCD_testing.ncd LCD_testing.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LCD_testing.twx LCD_testing.ncd -o LCD_testing.twr LCD_testing.pcf -ucf FPGA_PinMaps.ucf 
+bitgen -intstyle ise -f LCD_testing.ut LCD_testing.ncd 
+xst -intstyle ise -ifn "C:/Users/The Masterpiece!!!/Documents/GitHub/Final-Project/FinalProject/LCD_testing.xst" -ofn "C:/Users/The Masterpiece!!!/Documents/GitHub/Final-Project/FinalProject/LCD_testing.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA_PinMaps.ucf -p xc6slx45-csg324-3 "LCD_testing.ngc" LCD_testing.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD_testing_map.ncd LCD_testing.ngd LCD_testing.pcf 
+par -w -intstyle ise -ol high -mt off LCD_testing_map.ncd LCD_testing.ncd LCD_testing.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LCD_testing.twx LCD_testing.ncd -o LCD_testing.twr LCD_testing.pcf -ucf FPGA_PinMaps.ucf 
+bitgen -intstyle ise -f LCD_testing.ut LCD_testing.ncd 
+xst -intstyle ise -ifn "C:/Users/The Masterpiece!!!/Documents/GitHub/Final-Project/FinalProject/LCD_testing.xst" -ofn "C:/Users/The Masterpiece!!!/Documents/GitHub/Final-Project/FinalProject/LCD_testing.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA_PinMaps.ucf -p xc6slx45-csg324-3 "LCD_testing.ngc" LCD_testing.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD_testing_map.ncd LCD_testing.ngd LCD_testing.pcf 
+par -w -intstyle ise -ol high -mt off LCD_testing_map.ncd LCD_testing.ncd LCD_testing.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LCD_testing.twx LCD_testing.ncd -o LCD_testing.twr LCD_testing.pcf -ucf FPGA_PinMaps.ucf 
+bitgen -intstyle ise -f LCD_testing.ut LCD_testing.ncd 
+xst -intstyle ise -ifn "C:/Users/The Masterpiece!!!/Documents/GitHub/Final-Project/FinalProject/LCD_testing.xst" -ofn "C:/Users/The Masterpiece!!!/Documents/GitHub/Final-Project/FinalProject/LCD_testing.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA_PinMaps.ucf -p xc6slx45-csg324-3 "LCD_testing.ngc" LCD_testing.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD_testing_map.ncd LCD_testing.ngd LCD_testing.pcf 
+par -w -intstyle ise -ol high -mt off LCD_testing_map.ncd LCD_testing.ncd LCD_testing.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LCD_testing.twx LCD_testing.ncd -o LCD_testing.twr LCD_testing.pcf -ucf FPGA_PinMaps.ucf 
+bitgen -intstyle ise -f LCD_testing.ut LCD_testing.ncd 
+xst -intstyle ise -ifn "C:/Users/The Masterpiece!!!/Documents/GitHub/Final-Project/FinalProject/LCD_testing.xst" -ofn "C:/Users/The Masterpiece!!!/Documents/GitHub/Final-Project/FinalProject/LCD_testing.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA_PinMaps.ucf -p xc6slx45-csg324-3 "LCD_testing.ngc" LCD_testing.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD_testing_map.ncd LCD_testing.ngd LCD_testing.pcf 
+par -w -intstyle ise -ol high -mt off LCD_testing_map.ncd LCD_testing.ncd LCD_testing.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LCD_testing.twx LCD_testing.ncd -o LCD_testing.twr LCD_testing.pcf -ucf FPGA_PinMaps.ucf 
+bitgen -intstyle ise -f LCD_testing.ut LCD_testing.ncd 
+xst -intstyle ise -ifn "C:/Users/The Masterpiece!!!/Documents/GitHub/Final-Project/FinalProject/LCD_testing.xst" -ofn "C:/Users/The Masterpiece!!!/Documents/GitHub/Final-Project/FinalProject/LCD_testing.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA_PinMaps.ucf -p xc6slx45-csg324-3 "LCD_testing.ngc" LCD_testing.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD_testing_map.ncd LCD_testing.ngd LCD_testing.pcf 
+par -w -intstyle ise -ol high -mt off LCD_testing_map.ncd LCD_testing.ncd LCD_testing.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LCD_testing.twx LCD_testing.ncd -o LCD_testing.twr LCD_testing.pcf -ucf FPGA_PinMaps.ucf 
+bitgen -intstyle ise -f LCD_testing.ut LCD_testing.ncd 
+xst -intstyle ise -ifn "C:/Users/The Masterpiece!!!/Documents/GitHub/Final-Project/FinalProject/LCD_testing.xst" -ofn "C:/Users/The Masterpiece!!!/Documents/GitHub/Final-Project/FinalProject/LCD_testing.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA_PinMaps.ucf -p xc6slx45-csg324-3 "LCD_testing.ngc" LCD_testing.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD_testing_map.ncd LCD_testing.ngd LCD_testing.pcf 
+par -w -intstyle ise -ol high -mt off LCD_testing_map.ncd LCD_testing.ncd LCD_testing.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LCD_testing.twx LCD_testing.ncd -o LCD_testing.twr LCD_testing.pcf -ucf FPGA_PinMaps.ucf 
+bitgen -intstyle ise -f LCD_testing.ut LCD_testing.ncd 
+xst -intstyle ise -ifn "C:/Users/The Masterpiece!!!/Documents/GitHub/Final-Project/FinalProject/LCD_testing.xst" -ofn "C:/Users/The Masterpiece!!!/Documents/GitHub/Final-Project/FinalProject/LCD_testing.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA_PinMaps.ucf -p xc6slx45-csg324-3 "LCD_testing.ngc" LCD_testing.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD_testing_map.ncd LCD_testing.ngd LCD_testing.pcf 
+par -w -intstyle ise -ol high -mt off LCD_testing_map.ncd LCD_testing.ncd LCD_testing.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LCD_testing.twx LCD_testing.ncd -o LCD_testing.twr LCD_testing.pcf -ucf FPGA_PinMaps.ucf 
+bitgen -intstyle ise -f LCD_testing.ut LCD_testing.ncd 
+xst -intstyle ise -ifn "C:/Users/The Masterpiece!!!/Documents/GitHub/Final-Project/FinalProject/LCD_testing.xst" -ofn "C:/Users/The Masterpiece!!!/Documents/GitHub/Final-Project/FinalProject/LCD_testing.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA_PinMaps.ucf -p xc6slx45-csg324-3 "LCD_testing.ngc" LCD_testing.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD_testing_map.ncd LCD_testing.ngd LCD_testing.pcf 
+par -w -intstyle ise -ol high -mt off LCD_testing_map.ncd LCD_testing.ncd LCD_testing.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LCD_testing.twx LCD_testing.ncd -o LCD_testing.twr LCD_testing.pcf -ucf FPGA_PinMaps.ucf 
+bitgen -intstyle ise -f LCD_testing.ut LCD_testing.ncd 
+xst -intstyle ise -ifn "C:/Users/The Masterpiece!!!/Documents/GitHub/Final-Project/FinalProject/LCD_testing.xst" -ofn "C:/Users/The Masterpiece!!!/Documents/GitHub/Final-Project/FinalProject/LCD_testing.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA_PinMaps.ucf -p xc6slx45-csg324-3 "LCD_testing.ngc" LCD_testing.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD_testing_map.ncd LCD_testing.ngd LCD_testing.pcf 
+par -w -intstyle ise -ol high -mt off LCD_testing_map.ncd LCD_testing.ncd LCD_testing.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LCD_testing.twx LCD_testing.ncd -o LCD_testing.twr LCD_testing.pcf -ucf FPGA_PinMaps.ucf 
+bitgen -intstyle ise -f LCD_testing.ut LCD_testing.ncd 
+xst -intstyle ise -ifn "C:/Users/The Masterpiece!!!/Documents/GitHub/Final-Project/FinalProject/LCD_testing.xst" -ofn "C:/Users/The Masterpiece!!!/Documents/GitHub/Final-Project/FinalProject/LCD_testing.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA_PinMaps.ucf -p xc6slx45-csg324-3 "LCD_testing.ngc" LCD_testing.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD_testing_map.ncd LCD_testing.ngd LCD_testing.pcf 
+par -w -intstyle ise -ol high -mt off LCD_testing_map.ncd LCD_testing.ncd LCD_testing.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LCD_testing.twx LCD_testing.ncd -o LCD_testing.twr LCD_testing.pcf -ucf FPGA_PinMaps.ucf 
+bitgen -intstyle ise -f LCD_testing.ut LCD_testing.ncd 
+xst -intstyle ise -ifn "C:/Users/The Masterpiece!!!/Documents/GitHub/Final-Project/FinalProject/LCD_testing.xst" -ofn "C:/Users/The Masterpiece!!!/Documents/GitHub/Final-Project/FinalProject/LCD_testing.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA_PinMaps.ucf -p xc6slx45-csg324-3 "LCD_testing.ngc" LCD_testing.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD_testing_map.ncd LCD_testing.ngd LCD_testing.pcf 
+par -w -intstyle ise -ol high -mt off LCD_testing_map.ncd LCD_testing.ncd LCD_testing.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LCD_testing.twx LCD_testing.ncd -o LCD_testing.twr LCD_testing.pcf -ucf FPGA_PinMaps.ucf 
+bitgen -intstyle ise -f LCD_testing.ut LCD_testing.ncd 
+xst -intstyle ise -ifn "C:/Users/The Masterpiece!!!/Documents/GitHub/Final-Project/FinalProject/LCD_testing.xst" -ofn "C:/Users/The Masterpiece!!!/Documents/GitHub/Final-Project/FinalProject/LCD_testing.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA_PinMaps.ucf -p xc6slx45-csg324-3 "LCD_testing.ngc" LCD_testing.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD_testing_map.ncd LCD_testing.ngd LCD_testing.pcf 
+par -w -intstyle ise -ol high -mt off LCD_testing_map.ncd LCD_testing.ncd LCD_testing.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LCD_testing.twx LCD_testing.ncd -o LCD_testing.twr LCD_testing.pcf -ucf FPGA_PinMaps.ucf 
+bitgen -intstyle ise -f LCD_testing.ut LCD_testing.ncd 
+xst -intstyle ise -ifn "C:/Users/The Masterpiece!!!/Documents/GitHub/Final-Project/FinalProject/LCD_testing.xst" -ofn "C:/Users/The Masterpiece!!!/Documents/GitHub/Final-Project/FinalProject/LCD_testing.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA_PinMaps.ucf -p xc6slx45-csg324-3 "LCD_testing.ngc" LCD_testing.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD_testing_map.ncd LCD_testing.ngd LCD_testing.pcf 
+par -w -intstyle ise -ol high -mt off LCD_testing_map.ncd LCD_testing.ncd LCD_testing.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LCD_testing.twx LCD_testing.ncd -o LCD_testing.twr LCD_testing.pcf -ucf FPGA_PinMaps.ucf 
+bitgen -intstyle ise -f LCD_testing.ut LCD_testing.ncd 
+xst -intstyle ise -ifn "C:/Users/The Masterpiece!!!/Documents/GitHub/Final-Project/FinalProject/LCD_testing.xst" -ofn "C:/Users/The Masterpiece!!!/Documents/GitHub/Final-Project/FinalProject/LCD_testing.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA_PinMaps.ucf -p xc6slx45-csg324-3 "LCD_testing.ngc" LCD_testing.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD_testing_map.ncd LCD_testing.ngd LCD_testing.pcf 
+par -w -intstyle ise -ol high -mt off LCD_testing_map.ncd LCD_testing.ncd LCD_testing.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LCD_testing.twx LCD_testing.ncd -o LCD_testing.twr LCD_testing.pcf -ucf FPGA_PinMaps.ucf 
+bitgen -intstyle ise -f LCD_testing.ut LCD_testing.ncd 
+xst -intstyle ise -ifn "C:/Users/The Masterpiece!!!/Documents/GitHub/Final-Project/FinalProject/LCD_testing.xst" -ofn "C:/Users/The Masterpiece!!!/Documents/GitHub/Final-Project/FinalProject/LCD_testing.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA_PinMaps.ucf -p xc6slx45-csg324-3 "LCD_testing.ngc" LCD_testing.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD_testing_map.ncd LCD_testing.ngd LCD_testing.pcf 
+par -w -intstyle ise -ol high -mt off LCD_testing_map.ncd LCD_testing.ncd LCD_testing.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LCD_testing.twx LCD_testing.ncd -o LCD_testing.twr LCD_testing.pcf -ucf FPGA_PinMaps.ucf 
+bitgen -intstyle ise -f LCD_testing.ut LCD_testing.ncd 
+xst -intstyle ise -ifn "C:/Users/The Masterpiece!!!/Documents/GitHub/Final-Project/FinalProject/LCD_testing.xst" -ofn "C:/Users/The Masterpiece!!!/Documents/GitHub/Final-Project/FinalProject/LCD_testing.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA_PinMaps.ucf -p xc6slx45-csg324-3 "LCD_testing.ngc" LCD_testing.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD_testing_map.ncd LCD_testing.ngd LCD_testing.pcf 
+par -w -intstyle ise -ol high -mt off LCD_testing_map.ncd LCD_testing.ncd LCD_testing.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LCD_testing.twx LCD_testing.ncd -o LCD_testing.twr LCD_testing.pcf -ucf FPGA_PinMaps.ucf 
+bitgen -intstyle ise -f LCD_testing.ut LCD_testing.ncd 
+xst -intstyle ise -ifn "C:/Users/The Masterpiece!!!/Documents/GitHub/Final-Project/FinalProject/LCD_testing.xst" -ofn "C:/Users/The Masterpiece!!!/Documents/GitHub/Final-Project/FinalProject/LCD_testing.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FPGA_PinMaps.ucf -p xc6slx45-csg324-3 "LCD_testing.ngc" LCD_testing.ngd  
+map -intstyle ise -p xc6slx45-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o LCD_testing_map.ncd LCD_testing.ngd LCD_testing.pcf 
+par -w -intstyle ise -ol high -mt off LCD_testing_map.ncd LCD_testing.ncd LCD_testing.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml LCD_testing.twx LCD_testing.ncd -o LCD_testing.twr LCD_testing.pcf -ucf FPGA_PinMaps.ucf 
+bitgen -intstyle ise -f LCD_testing.ut LCD_testing.ncd 

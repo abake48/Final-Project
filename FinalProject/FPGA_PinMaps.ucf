@@ -1,0 +1,45 @@
+# PMOD Connector
+ NET "LCD_DATA[0]"  LOC = <T3>; # Bank = 2,  Pin name = IO_L62N_D6,     Sch name = JA-D0_N
+ NET "LCD_DATA[1]"  LOC = <R3>; # Bank = 2,  Pin name = IO_L62P_D5,     Sch name = JA-D0_P
+ NET "LCD_DATA[2]"  LOC = <P6>; # Bank = 2,  Pin name = IO_L64N_D9,     Sch name = JA-D2_N
+ NET "LCD_DATA[3]"  LOC = <N5>; # Bank = 2,  Pin name = IO_L64P_D8,     Sch name = JA-D2_P
+ NET "RS"  LOC = <V9>; # Bank = 2,  Pin name = IO_L32N_GCLK28, Sch name = JA-CLK_N
+ NET "RW"  LOC = <T9>; # Bank = 2,  Pin name = IO_L32P_GCLK29, Sch name = JA-CLK_P
+ NET "EN"  LOC = <V4>; # Bank = 2,  Pin name = IO_L63P,        Sch name = JA-D1_P
+ 
+ # onBoard Leds
+ NET "leds[0]" LOC = <U18>; # Bank = 1, Pin name = IO_L52N_M1DQ15, 	   Sch name = LD0
+ NET "leds[1]" LOC = <M14>; # Bank = 1, Pin name = IO_L53P, 		 	   Sch name = LD1
+ NET "leds[2]" LOC = <N14>; # Bank = 1, Pin name = IO_L53N_VREF, 	   Sch name = LD2
+ NET "leds[3]" LOC = <L14>; # Bank = 1, Pin name = IO_L61P, 		 	   Sch name = LD3
+ NET "leds[4]" LOC = <M13>; # Bank = 1, Pin name = IO_L61N, 		 	   Sch name = LD4
+ NET "leds[5]" LOC = <D4>;  # Bank = 0, Pin name = IO_L1P_HSWAPEN_0,	   Sch name = HSWAP/LD5
+ NET "leds[6]" LOC = <P16>; # Bank = 1, Pin name = IO_L74N_DOUT_BUSY_1, Sch name = LD6
+ NET "leds[7]" LOC = <N12>; # Bank = 2, Pin name = IO_L13P_M1_2,		   Sch name = M1/LD7
+ # onBoard SWITCHES
+ NET "switches[0]" LOC = A10; # Bank = 0, Pin name = IO_L37N_GCLK12,      	Sch name = SW0
+ NET "switches[1]" LOC = D14; # Bank = 0, Pin name = IO_L65P_SCP3,      	Sch name = SW1
+ NET "switches[2]" LOC = C14; # Bank = 0, Pin name = IO_L65N_SCP2,      	Sch name = SW2
+ NET "switches[3]" LOC = P15; # Bank = 1, Pin name = IO_L74P_AWAKE_1,       Sch name = SW3
+ NET "switches[4]" LOC = P12; # Bank = 2, Pin name = IO_L13N_D10,      		Sch name = SW4
+ NET "switches[5]" LOC = R5;  # Bank = 2, Pin name = IO_L48P_D7,      		Sch name = SW5
+ NET "switches[6]" LOC = T5;  # Bank = 2, Pin name = IO_L48N_RDWR_B_VREF_2, Sch name = SW6
+ NET "switches[7]" LOC = E4;  # Bank = 3, Pin name = IO_L54P_M3RESET,       Sch name = SW7
+# onBoard PUSH BUTTONS 
+ NET "up" LOC = <N4>;  # Bank = 3, Pin name = IO_L1P, 	   		   Sch name = BTNU
+ #NET "left" LOC = <P4>;  # Bank = 3, Pin name = IO_L2P, 	   		   Sch name = BTNL
+ NET "down" LOC = <P3>;  # Bank = 3, Pin name = IO_L2N, 	   		   Sch name = BTND
+ #NET "right" LOC = <F6>;  # Bank = 3, Pin name = IO_L55P_M3A13, 	   Sch name = BTNR
+ NET "center" LOC = <F5>;  # Bank = 3, Pin name = IO_L55N_M3A14, 	   Sch name = BTNC
+ 
+ # Audio
+#NET "ac97_bit_clock"   LOC = L13; # Bank = 1, Pin name = IO_L40N_GCLK10_M1A6, Sch name = AUD-BIT-CLK
+#NET "ac97_sdata_in"   LOC = T18; # Bank = 1, Pin name = IO_L51N_M1DQ13,      Sch name = AUD-SDI
+#NET "ac97_sdata_out"   LOC = N16; # Bank = 1, Pin name = IO_L50N_M1UDQSN,     Sch name = AUD-SDO
+#NET "ac97_synch"  LOC = U17; # Bank = 1, Pin name = IO_L52P_M1DQ14,      Sch name = AUD-SYNC
+#NET "ac97_reset_b"   LOC = T17; # Bank = 1, Pin name = IO_L51P_M1DQ12,      Sch name = AUD-RESET
+ 
+
+ 
+ NET "reset" LOC=<T15>;
+ NET "clk" LOC=<L15>;
